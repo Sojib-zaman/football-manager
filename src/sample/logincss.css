@@ -1,0 +1,16 @@
+#clubname
+{
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+}
+#password
+{
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+}
+#loginbutton
+{
+    -fx-cursor: Hand;
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+}

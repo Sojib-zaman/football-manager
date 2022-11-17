@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #b2ff22;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Search.Playersearchcontrol">
+   <children>
+      <Label layoutX="146.0" layoutY="73.0" prefHeight="94.0" prefWidth="546.0" text="SEARCH BY PLAYERS">
+         <font>
+            <Font name="Times New Roman" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.3740458160866308" endY="0.5534351308837191" startX="0.3473282497347766" startY="0.3854961977660201">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6100000143051147" green="0.13420000672340393" blue="0.5054889917373657" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.0521978021978022">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.13420000672340393" blue="0.5069100260734558" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.15659340659340662">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.13420000672340393" blue="0.5069100260734558" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.18681318681318682">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.13420000672340393" blue="0.5069100260734558" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.3021978021978022">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.14030000567436218" blue="0.5160599946975708" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4203296703296702">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.14640000462532043" blue="0.5172799825668335" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.47802197802197793">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.14640000462532043" blue="0.5172799825668335" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5851648351648351">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.14640000462532043" blue="0.5172799825668335" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7527472527472527">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.14640000462532043" blue="0.5172799825668335" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8434065934065933">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.14640000462532043" blue="0.5172799825668335" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8873626373626372">
+                     <color>
+                        <Color red="0.6100000143051147" green="0.14640000462532043" blue="0.5172799825668335" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3263157904148102" green="0.07130604237318039" blue="0.07130604237318039" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="byplayername" layoutX="166.0" layoutY="221.0" mnemonicParsing="false" onAction="#playername" prefHeight="45.0" prefWidth="457.0" style="-fx-border-color: #001a33; -fx-background-color: Linear-gradient(#66ff66, #99ff99,  #ccffcc); -fx-cursor: pointer; -fx-background-radius: 35px; -fx-border-radius: 35px;" text="Player Name ">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="clubcountry" layoutX="166.0" layoutY="277.0" mnemonicParsing="false" onAction="#clubcountryname" prefHeight="45.0" prefWidth="457.0" style="-fx-border-color: #001a33; -fx-background-color: Linear-gradient(#66ff66, #99ff99,  #ccffcc); -fx-cursor: pointer; -fx-background-radius: 35px; -fx-border-radius: 35px;" text="Country">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="bypos" layoutX="166.0" layoutY="333.0" mnemonicParsing="false" onAction="#positionsearch" prefHeight="45.0" prefWidth="457.0" style="-fx-border-color: #001a33; -fx-background-color: Linear-gradient(#66ff66, #99ff99,  #ccffcc); -fx-cursor: pointer; -fx-background-radius: 35px; -fx-border-radius: 35px;" text="Position">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="salsearch" layoutX="166.0" layoutY="387.0" mnemonicParsing="false" onAction="#bysalary" prefHeight="45.0" prefWidth="457.0" style="-fx-border-color: #001a33; -fx-background-color: Linear-gradient(#66ff66, #99ff99,  #ccffcc); -fx-cursor: pointer; -fx-background-radius: 35px; -fx-border-radius: 35px;" text="Salary Range">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="countplayer" layoutX="166.0" layoutY="440.0" mnemonicParsing="false" onAction="#countryplayercount" prefHeight="45.0" prefWidth="457.0" style="-fx-border-color: #001a33; -fx-background-color: Linear-gradient(#66ff66, #99ff99,  #ccffcc); -fx-cursor: pointer; -fx-background-radius: 35px; -fx-border-radius: 35px;" text="Country-wise Player Count">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="tohome" layoutX="166.0" layoutY="495.0" mnemonicParsing="false" onAction="#backtomainmenu" prefHeight="45.0" prefWidth="457.0" style="-fx-border-color: #001a33; -fx-background-color: Linear-gradient(#66ff66, #99ff99,  #ccffcc); -fx-cursor: pointer; -fx-background-radius: 35px; -fx-border-radius: 35px;" text="Back to Home Page">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

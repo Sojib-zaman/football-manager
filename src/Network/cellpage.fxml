@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Network.Cellpage">
+    <children>
+        <TableView fx:id="myplayertable" layoutX="14.0" layoutY="90.0" prefHeight="414.0" prefWidth="783.0" style="-fx-border-color: Black; -fx-border-width: 4px;">
+            <columns>
+                <TableColumn id="tablename" fx:id="name" prefWidth="152.0" style="-fx-background-color: Linear-gradient( #9388F8,#beb7fb); -fx-border-color: black; -fx-font-family: Candara; -fx-font-size: 15px;" text="NAME" />
+                <TableColumn id="tablecountry" fx:id="country" minWidth="0.0" prefWidth="100.79998779296875" style="-fx-background-color: Linear-gradient(#9BE318,#a8e92f,#cff38c); -fx-border-color: black; -fx-font-family: Candara; -fx-font-size: 15;" text="COUNTRY" />
+                <TableColumn id="tableage" fx:id="age" prefWidth="44.800048828125" style="-fx-background-color: Linear-gradient(#043e48,#0a96ae,#9fecf9); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="AGE" />
+                <TableColumn id="tableheight" fx:id="height" prefWidth="67.99993896484375" style="-fx-background-color: Linear-gradient(#9e27be, #DEA8ED,#efd5f6); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="HEIGHT" />
+                <TableColumn id="tableclub" fx:id="club" prefWidth="100.79998779296875" style="-fx-background-color: Linear-gradient(#e64d00,#ffaa80,#ffeee6); -fx-border-color: black; -fx-font-family: Candara; -fx-font-size: 15;" text="CLUB" />
+                <TableColumn id="tablepos" fx:id="position" prefWidth="87.20001220703125" style="-fx-background-color: Linear-gradient( #9fc00c,  #E9F9A5, #f4fccf); -fx-border-color: black; -fx-font-family: Candara; -fx-font-size: 15;" text="POSITION" />
+                <TableColumn id="tablenum" fx:id="number" prefWidth="75.20001220703125" style="-fx-background-color: Linear-gradient( #8f87f7, #ABA5F9, #e9e7fd); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="NUMBER" />
+                <TableColumn id="tablesal" fx:id="salary" prefWidth="75.0" style="-fx-background-color: Linear-gradient( #958704,  #F9E31F,  #fdf6b4); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="SALARY" />
+                <TableColumn id="tableprice" fx:id="price" prefWidth="75.0" style="-fx-background-color: Linear-gradient(  #08c437,   #5DF884,   #b6fcc7); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="PRICE" />
+            </columns>
+        </TableView>
+        <Label layoutX="126.0" layoutY="28.0" prefHeight="50.0" prefWidth="589.0" text="RELATED PLAYER INFORMATION">
+            <font>
+                <Font name="Lucida Bright" size="36.0" />
+            </font>
+        </Label>
+        <Button fx:id="back" layoutX="513.0" layoutY="516.0" mnemonicParsing="false" onAction="#backtomain" prefHeight="35.0" prefWidth="255.0" style="-fx-background-color: #abcdef;" text="Back to Main Menu" textFill="#1e9e1b">
+            <font>
+                <Font size="25.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+
+                </Lighting>
+            </effect>
+        </Button>
+      <Button layoutX="59.0" layoutY="520.0" mnemonicParsing="false" onAction="#sellplayer" prefHeight="43.0" prefWidth="286.0" style="-fx-background-color: GRAY;" text="SELL THIS PLAYER">
+         <font>
+            <Font name="Constantia" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="723.0" style="-fx-background-color: #8a8a5c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InputPage.Inputtaker">
+   <children>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="74.0" prefHeight="50.0" prefWidth="723.0" style="-fx-background-color: lime;" text=" PLEASE ENTER A VALID INPUT FOR YOUR SEARCH">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4911111195882161" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.44999998807907104" green="0.18449999392032623" blue="0.18910405039787292" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.11263736263736264">
+                     <color>
+                        <Color red="0.44999998807907104" green="0.18449999392032623" blue="0.19335000216960907" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.22802197802197802">
+                     <color>
+                        <Color red="0.18039999902248383" green="0.37247398495674133" blue="0.4399999976158142" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.35714285714285715">
+                     <color>
+                        <Color red="0.4399999976158142" green="0.18039999902248383" blue="0.19337999820709229" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.42582417582417587">
+                     <color>
+                        <Color red="0.17630000412464142" green="0.4300000071525574" blue="0.17923295497894287" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5137362637362637">
+                     <color>
+                        <Color red="0.4399999976158142" green="0.18039999902248383" blue="0.19337999820709229" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6071428571428571">
+                     <color>
+                        <Color red="0.17630000412464142" green="0.19243121147155762" blue="0.4300000071525574" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6923076923076923">
+                     <color>
+                        <Color red="0.4399999976158142" green="0.18039999902248383" blue="0.19337999820709229" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7637362637362637">
+                     <color>
+                        <Color red="0.4399999976158142" green="0.18039999902248383" blue="0.19337999820709229" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8159340659340658">
+                     <color>
+                        <Color red="0.4399999976158142" green="0.18039999902248383" blue="0.19337999820709229" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4399999976158142" green="0.18039999902248383" blue="0.19337999820709229" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <ColorAdjust brightness="0.25" contrast="1.0" hue="-0.55" saturation="0.93" />
+         </effect>
+      </Label>
+      <Button fx:id="submitinput" layoutX="160.0" layoutY="446.0" mnemonicParsing="false" onAction="#submitinput" prefHeight="42.0" prefWidth="112.0" text="SUBMIT">
+         <font>
+            <Font name="FontAwesome" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="152.07" radius="88.6425" width="204.5">
+               <color>
+                  <Color red="0.7368420958518982" green="0.16374269127845764" blue="0.16374269127845764" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label fx:id="requirement" alignment="CENTER" layoutX="171.0" layoutY="317.0" prefHeight="42.0" prefWidth="358.0" style="-fx-border-color: cyan; -fx-background-color: orange; -fx-border-width: 3px;" textFill="#e00b0b">
+         <font>
+            <Font name="Times New Roman Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="resetinput" layoutX="397.0" layoutY="446.0" mnemonicParsing="false" onAction="#resetinp" prefHeight="42.0" prefWidth="112.0" text="RESET">
+         <font>
+            <Font name="FontAwesome" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="152.07" radius="88.6425" width="204.5">
+               <color>
+                  <Color red="0.7368420958518982" green="0.16374269127845764" blue="0.16374269127845764" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="userinput" layoutX="168.0" layoutY="367.0" prefHeight="50.0" prefWidth="358.0" style="-fx-border-color: Black; -fx-border-width: 3px;" />
+      <ImageView fx:id="imageview" fitHeight="163.0" fitWidth="330.0" layoutX="260.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

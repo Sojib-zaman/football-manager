@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Linear-gradient(   #a6ff00,  #b2ff22,#dbff99);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Search.Searchbyclubcontrol">
+   <children>
+      <Button fx:id="maxsalary" layoutX="191.0" layoutY="193.0" mnemonicParsing="false" onAction="#clickedonmaxsalary" prefHeight="42.0" prefWidth="491.0" style="-fx-background-color: Linear-gradient( #00e600, #33ff33 ,   #99ff99); -fx-border-color: #001a33; -fx-border-radius: 35px; -fx-background-radius: 35px;" text="Maximum Salary">
+         <font>
+            <Font name="Californian FB Italic" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="maxage" layoutX="191.0" layoutY="257.0" mnemonicParsing="false" onAction="#clickedonmaxage" prefHeight="42.0" prefWidth="491.0" style="-fx-background-color: Linear-gradient( #00e600, #33ff33 ,   #99ff99); -fx-border-color: #001a33; -fx-border-radius: 35px; -fx-background-radius: 35px;" text="Maximum Age">
+         <font>
+            <Font name="Californian FB Italic" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="maxheight" layoutX="191.0" layoutY="321.0" mnemonicParsing="false" onAction="#clickedonmaxheight" prefHeight="42.0" prefWidth="491.0" style="-fx-background-color: Linear-gradient( #00e600, #33ff33 ,   #99ff99); -fx-border-color: #001a33; -fx-border-radius: 35px; -fx-background-radius: 35px;" text="Maximum Height">
+         <font>
+            <Font name="Californian FB Italic" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="total" layoutX="191.0" layoutY="381.0" mnemonicParsing="false" onAction="#clickedontotalsalary" prefHeight="42.0" prefWidth="491.0" style="-fx-background-color: Linear-gradient( #00e600, #33ff33 ,   #99ff99); -fx-border-color: #001a33; -fx-border-radius: 35px; -fx-background-radius: 35px;" text="Total Salary">
+         <font>
+            <Font name="Californian FB Italic" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="191.0" layoutY="446.0" mnemonicParsing="false" onAction="#backtomain" prefHeight="42.0" prefWidth="491.0" style="-fx-background-color: Linear-gradient( #00e600, #33ff33 ,   #99ff99); -fx-border-color: #001a33; -fx-border-radius: 35px; -fx-background-radius: 35px;" text="Back to Main Menu">
+         <font>
+            <Font name="Californian FB Italic" size="27.0" />
+         </font>
+      </Button>
+      <Label layoutX="191.0" layoutY="64.0" prefHeight="99.0" prefWidth="491.0" text="SEARCH BY CLUB INFORMATION" textFill="#0829b9">
+         <font>
+            <Font name="Candara Bold" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

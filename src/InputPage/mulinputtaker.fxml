@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #b0d143;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InputPage.Mulinputtaker">
+   <children>
+      <HBox alignment="CENTER" layoutY="163.0" prefHeight="55.0" prefWidth="771.0" spacing="60.0">
+         <children>
+            <TextField fx:id="txt1" prefHeight="40.0" prefWidth="300.0" promptText="Your input" style="-fx-background-color: #d7b8c1;">
+               <font>
+                  <Font name="Lucida Fax Regular" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt2" prefHeight="40.0" prefWidth="300.0" promptText="Your input" style="-fx-background-color: #d7b8c1;">
+               <font>
+                  <Font name="Lucida Fax Regular" size="19.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Label id="Firstlabel" fx:id="upper" layoutX="56.0" layoutY="132.0" prefHeight="32.0" prefWidth="230.0" style="-fx-alignment: center; -fx-background-color: #1aa351;" text="Label">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="22.0" />
+         </font>
+      </Label>
+      <Label id="secondlabel" fx:id="lower" layoutX="414.0" layoutY="140.0" prefHeight="26.0" prefWidth="277.0" style="-fx-alignment: center; -fx-background-color: #1aa351;" text="Label">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="36.0" prefHeight="70.0" prefWidth="606.0" text="PLEASE ENTER A VALID INPUT FOR YOUR SEARCH">
+         <font>
+            <Font name="Lucida Bright Demibold" size="23.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.46000001695421006" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.26326316595077515" green="0.057543858885765076" blue="0.43157893419265747" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.009216589861751147">
+                     <color>
+                        <Color red="0.26326316595077515" green="0.057543858885765076" blue="0.43157893419265747" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1539347749025168">
+                     <color>
+                        <Color red="0.263590008020401" green="0.06019999831914902" blue="0.4300000071525574" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.29295167198393">
+                     <color>
+                        <Color red="0.263590008020401" green="0.06019999831914902" blue="0.4300000071525574" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.39315254637835295">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.47816967978258307">
+                     <color>
+                        <Color red="0.06019999831914902" green="0.4300000071525574" blue="0.3851109743118286" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5714285714285714">
+                     <color>
+                        <Color red="0.4300000071525574" green="0.06019999831914902" blue="0.06661271303892136" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6886151482925678">
+                     <color>
+                        <Color red="0.4300000071525574" green="0.06019999831914902" blue="0.07252666354179382" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.834249084249084">
+                     <color>
+                        <Color red="0.06019999831914902" green="0.4300000071525574" blue="0.16066589951515198" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9631336405529953">
+                     <color>
+                        <Color red="0.4300000071525574" green="0.06019999831914902" blue="0.07252666354179382" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="submit" layoutX="99.0" layoutY="342.0" mnemonicParsing="false" onAction="#presssubmit" prefHeight="46.0" prefWidth="144.0" rotate="-9.0" style="-fx-background-color: #a3d2e6;" text="Submit">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="reset" layoutX="481.0" layoutY="342.0" mnemonicParsing="false" onAction="#pressreset" prefHeight="46.0" prefWidth="144.0" rotate="-9.0" style="-fx-background-color: #a3d2e6;" text="Reset" textAlignment="RIGHT">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
