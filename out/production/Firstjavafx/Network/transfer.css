@@ -1,0 +1,11 @@
+.label
+{
+    -fx-border-style: dashed;
+    -fx-border-width: 1.9px;
+    -fx-border-color: black
+;
+}
+.button:hover
+{
+    background-color: moccasin;
+}

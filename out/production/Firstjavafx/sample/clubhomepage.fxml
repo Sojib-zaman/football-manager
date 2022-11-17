@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Clubhomepage">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Pane layoutX="33.0" layoutY="-1.0" prefHeight="602.0" prefWidth="186.0" style="-fx-background-color: Linear-gradient(  #066022,#0ddb4e,#87f8aa);">
+               <children>
+                  <Pane layoutX="-45.0" prefHeight="602.0" prefWidth="44.0" style="-fx-background-color: Linear-gradient( #390660,#820ddb,#bc6ef7);">
+                     <children>
+                        <Line endX="0.9999885559082031" endY="601.3999633789062" layoutX="44.0" layoutY="1.0" startX="1.0000038146972656" startY="-3.039836883544922E-6" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="playersearch" layoutX="8.0" layoutY="152.0" mnemonicParsing="false" onAction="#searchbyplayer" prefHeight="67.0" prefWidth="167.0" style="-fx-background-color: #42f2f5; -fx-border-color: #000000;" text="Player Search" textAlignment="JUSTIFY" textFill="#c90707">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="clubsearch" layoutX="8.0" layoutY="233.0" mnemonicParsing="false" onAction="#searchbyclub" prefHeight="67.0" prefWidth="167.0" style="-fx-background-color: #42f2f5; -fx-border-color: #000000;" text="Club Search" textAlignment="JUSTIFY" textFill="#c90707">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="playeradd" layoutX="8.0" layoutY="320.0" mnemonicParsing="false" onAction="#Makertwindow" prefHeight="67.0" prefWidth="167.0" style="-fx-background-color: #42f2f5; -fx-border-color: #000000;" text="Transfer Market" textAlignment="JUSTIFY" textFill="#c90707">
+                     <font>
+                        <Font name="Times New Roman Bold" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exit" layoutX="8.0" layoutY="405.0" mnemonicParsing="false" onAction="#exitsystem" prefHeight="67.0" prefWidth="167.0" style="-fx-background-color: #42f2f5; -fx-border-color: #000000;" text="Exit System" textAlignment="JUSTIFY" textFill="#c90707">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Line endX="11.0" endY="-12.00000286102295" layoutX="175.0" layoutY="14.0" startX="11.0" startY="588.5999755859375" />
+               </children>
+            </Pane>
+            <Pane layoutX="219.0" layoutY="1.0" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: Linear-gradient(  #0dd8db,#0ddbc0,#d3f2ec);">
+               <children>
+                  <ImageView fx:id="footballimg1" fitHeight="120.0" fitWidth="273.0" layoutX="293.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="cimg" fitHeight="225.0" fitWidth="295.0" layoutX="271.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="cname" alignment="CENTER" layoutX="14.0" layoutY="375.0" prefHeight="76.0" prefWidth="558.0" text="Label" textFill="#963737" wrapText="true">
+                     <font>
+                        <Font name="Dubai Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="334.0" prefHeight="41.0" prefWidth="547.0" style="-fx-background-color: BLACK;" text="WELCOME TO THE CLUB HOME PAGE " textFill="#4f9923">
+                     <font>
+                        <Font name="Corbel" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="21.0" prefHeight="67.0" prefWidth="536.0" style="-fx-background-color: BLACK;" text="JAVAFX FOOTBALL GUI" textFill="#f4f0f4">
+                     <font>
+                        <Font name="Constantia Italic" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

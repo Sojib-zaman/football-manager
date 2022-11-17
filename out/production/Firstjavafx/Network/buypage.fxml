@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Linear-gradient(  #0dd8db,#0ddbc0,#d3f2ec);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Network.Buypage">
+   <children>
+       <TableView fx:id="myplayertable" layoutX="14.0" layoutY="90.0" prefHeight="414.0" prefWidth="783.0" style="-fx-border-color: Black; -fx-border-width: 4px;">
+           <columns>
+               <TableColumn id="tablename" fx:id="name" prefWidth="152.0" style="-fx-background-color: Linear-gradient( #9388F8,#beb7fb); -fx-border-color: black; -fx-font-family: Candara; -fx-font-size: 15px;" text="NAME" />
+               <TableColumn id="tablecountry" fx:id="country" minWidth="0.0" prefWidth="100.79998779296875" style="-fx-background-color: Linear-gradient(#9BE318,#a8e92f,#cff38c); -fx-border-color: black; -fx-font-family: Candara; -fx-font-size: 15;" text="COUNTRY" />
+               <TableColumn id="tableage" fx:id="age" prefWidth="44.800048828125" style="-fx-background-color: Linear-gradient(#043e48,#0a96ae,#9fecf9); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="AGE" />
+               <TableColumn id="tableheight" fx:id="height" prefWidth="67.99993896484375" style="-fx-background-color: Linear-gradient(#9e27be, #DEA8ED,#efd5f6); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="HEIGHT" />
+               <TableColumn id="tableclub" fx:id="club" prefWidth="100.79998779296875" style="-fx-background-color: Linear-gradient(#e64d00,#ffaa80,#ffeee6); -fx-border-color: black; -fx-font-family: Candara; -fx-font-size: 15;" text="CLUB" />
+               <TableColumn id="tablepos" fx:id="position" prefWidth="87.20001220703125" style="-fx-background-color: Linear-gradient( #9fc00c,  #E9F9A5, #f4fccf); -fx-border-color: black; -fx-font-family: Candara; -fx-font-size: 15;" text="POSITION" />
+               <TableColumn id="tablenum" fx:id="number" prefWidth="75.20001220703125" style="-fx-background-color: Linear-gradient( #8f87f7, #ABA5F9, #e9e7fd); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="NUMBER" />
+               <TableColumn id="tablesal" fx:id="salary" prefWidth="75.0" style="-fx-background-color: Linear-gradient( #958704,  #F9E31F,  #fdf6b4); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="SALARY" />
+               <TableColumn id="tableprice" fx:id="price" prefWidth="75.0" style="-fx-background-color: Linear-gradient(  #08c437,   #5DF884,   #b6fcc7); -fx-border-color: #003300; -fx-font-family: Candara; -fx-font-size: 15;" text="PRICE" />
+           </columns>
+       </TableView>
+      <Label layoutX="199.0" layoutY="27.0" prefHeight="62.0" prefWidth="448.0" text="AVAILABLE PLAYERS TO BUY" textFill="#823c27">
+         <font>
+            <Font name="Constantia" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="88.0" layoutY="519.0" mnemonicParsing="false" onAction="#buyplayer" prefHeight="50.0" prefWidth="195.0" text="BUY PLAYER">
+         <font>
+            <Font name="Constantia" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="423.0" layoutY="519.0" mnemonicParsing="false" onAction="#Backtomainmenu" prefHeight="50.0" prefWidth="222.0" text="Back to Main Menu">
+         <font>
+            <Font name="Constantia" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
